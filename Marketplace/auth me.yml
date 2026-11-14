@@ -1,0 +1,18 @@
+info:
+  name: auth me
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: https://api.kitek-pg.ru/api/marketplace/auth/me
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTQ2MzYwMjY4MjcsInVzZXJuYW1lIjoidGVzdHVzZXIxMTEyIiwiaWF0IjoxNzk0NjM2MDI2LCJleHAiOjE3OTQ3MjI0MjZ9.Nz5OFWHuO2GWmz6V51i_9_qEe_-79KKSdct0QRv0wzU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

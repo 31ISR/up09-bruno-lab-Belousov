@@ -1,0 +1,27 @@
+info:
+  name: create items
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: https://api.kitek-pg.ru/api/marketplace/items
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Б/У Тимофей",
+        "description": "Модель старая, 20+ владельцев, волосатая шо пипец",
+        "price": 500,
+        "imageUrl": "https://i.pinimg.com/originals/17/e9/d4/17e9d42369ff04c2da0f799322282568.jpg"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTQ2MzYwMjY4MjcsInVzZXJuYW1lIjoidGVzdHVzZXIxMTEyIiwiaWF0IjoxNzk0NjM2MDI2LCJleHAiOjE3OTQ3MjI0MjZ9.Nz5OFWHuO2GWmz6V51i_9_qEe_-79KKSdct0QRv0wzU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
