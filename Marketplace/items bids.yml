@@ -1,0 +1,28 @@
+info:
+  name: items bids
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: https://api.kitek-pg.ru/api/marketplace/items/:id/bids
+  params:
+    - name: id
+      value: "1794637074225"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "amount":2000001
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTQ2MzYwMjY4MjcsInVzZXJuYW1lIjoidGVzdHVzZXIxMTEyIiwiaWF0IjoxNzk0NjM2MDI2LCJleHAiOjE3OTQ3MjI0MjZ9.Nz5OFWHuO2GWmz6V51i_9_qEe_-79KKSdct0QRv0wzU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
